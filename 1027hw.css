@@ -173,6 +173,9 @@
     top:5px;  
     background-color:white;
 }
-.menu{
+.menu-button + .menu{
     display: none;
-}
+}/*
+.menu-button:active .menu{
+    display: block;
+}*/
