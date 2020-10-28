@@ -2,7 +2,7 @@
     width: 920px;
     height: 550px;
     /*background-color: yellow;*/
-    float:left;
+    float:left;/*浮動*/
 }
 .YTbox{ margin-top: 30px;
      margin-left: 20px;
@@ -52,6 +52,7 @@
     margin-top: 5px;
     width: 36px;
     height: 36px;
+    border-radius: 20px;
 }
 .YTtitle{
     position: absolute;
@@ -59,7 +60,7 @@
     margin-top: 5px;
     width: 200px;
     height: 45px;
-    overflow: hidden;
+    overflow: hidden;/*超出範圍隱藏*/
 }
 .YTtitle a{
     text-decoration:none;
@@ -173,9 +174,26 @@
     top:5px;  
     background-color:white;
 }
-.menu-button + .menu{
+.menu{
+    position: absolute;;
     display: none;
-}/*
-.menu-button:active .menu{
+    top:5px;
+    border-radius: 5px;
+}
+.menu ul{
+    width: 90px;
+    height: 50px;
+    background-color: white;
+    border: 1px gray solid;
+}
+.menu ul li{
+    color: #222222;
+    font-size: 9pt;
+}
+.menu ul li:hover{
+    background-color: gray;
+}
+
+/*.menu-button:active .menu{
     display: block;
 }*/
