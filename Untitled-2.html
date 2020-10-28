@@ -15,7 +15,68 @@
                 height: 100px;
                 background-color: teal;
                 color: #FFFFFF;
+                
             }
+            #bbb{position: relative;
+                width: 80px;
+                height: 40px;
+            }
+            #ddd{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 80px;
+                height: 40px;
+                text-align: center;
+                color: #FFF;
+                background-color: tomato;
+                transition: 0.5s width linear 0s;
+            }
+            #eee{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 80px;
+                height: 40px;
+                text-align: center;
+                color: #FFF;
+                background-color: tomato;
+                transition: 0.5s height linear 0s;
+            }
+            #ddd p{
+                line-height: 40px;
+                margin: auto;
+            }
+            #eee p{
+                line-height: 40px;
+                margin: auto;
+                transition: 0.5s line-height linear 0s;
+            }
+            #bbb:hover #ddd{
+                color:teal;
+                width: 280px;
+                background-color: yellowgreen;
+            }
+            #bbb:hover #eee{
+                color:teal;
+                height: 240px;
+                background-color: yellowgreen;
+            } #bbb:hover #eee p{
+                line-height: 240px;
+            }
+            #ufo{
+		width: 120px;
+		height: 120px;
+        position: absolute;
+        opacity: 0.2;
+        left: 0;
+        top: 0px;
+        background-color: violet;
+		animation: round 3s linear infinite;
+    }
+    @keyframes round{
+        0%{left: 0px}50%{left:90%}100%{left: 0px}
+	}
         </style>
     </head>
     <body>
@@ -111,7 +172,14 @@
             <li><img src="https://lh4.googleusercontent.com/-e0aAn6uD_w8/UkBZGpgaG9I/AAAAAAAAkAo/dGRKESx6eN4/w1236-h695-no/DSC05507.JPG"></li>
         </ul>
        </div>
-     
+
+       <div id="bbb">
+        <div id="ddd"><p><b>(((ﾟДﾟ;)))</b></p></div>
+        <div id="eee"><p><b>(((ﾟДﾟ;)))</b></p></div>
+       </div>
+      
+       <div id="ufo">
+     </div>
       
     </body>
 </html>
